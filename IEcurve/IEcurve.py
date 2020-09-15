@@ -118,4 +118,7 @@ for i in range (0,r):
 ax3.errorbar(x2p,y2p,yerr=e2p,color='C0',marker='o',ls='none',markersize='4',label='1+1 REMPI')
 plt.legend()
 
+np.savetxt('../scans/1+1d.dat',np.column_stack((x2a,y2a)))
+np.savetxt('../scans/2d.dat',np.column_stack((x1a,y1a)))
+
 plt.show()
